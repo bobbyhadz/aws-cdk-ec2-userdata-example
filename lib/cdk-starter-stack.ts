@@ -16,12 +16,6 @@ export class CdkStarterStack extends cdk.Stack {
 
     webserverSG.addIngressRule(
       ec2.Peer.anyIpv4(),
-      ec2.Port.tcp(22),
-      'allow SSH access from anywhere',
-    );
-
-    webserverSG.addIngressRule(
-      ec2.Peer.anyIpv4(),
       ec2.Port.tcp(80),
       'allow HTTP traffic from anywhere',
     );
@@ -39,7 +33,6 @@ export class CdkStarterStack extends cdk.Stack {
       machineImage: new ec2.AmazonLinuxImage({
         generation: ec2.AmazonLinuxGeneration.AMAZON_LINUX_2,
       }),
-      keyName: 'ec2-key-pair',
     });
 
     // 👇 load user data script
