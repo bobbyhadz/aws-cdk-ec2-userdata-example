@@ -1,7 +1,7 @@
 # EC2 User Data Example in AWS CDK - Complete Guide
 
 A repository for an article on
-[bobbyhadz.com](https://bobbyhadz.com/blog/aws-cdk-ec2-userdata-example)
+[bobbyhadz.com](https://bobbyhadz.com/blog/aws-cdk-ec2-instance-example)
 
 > If you use CDK v1, switch to the cdk-v1 branch
 
